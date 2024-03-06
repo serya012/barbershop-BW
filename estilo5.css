@@ -1,262 +1,177 @@
-/*APLICAÇÃO DA FONT DO GOOGLE*/
+/* APLICAÇÃO DA FONT DO GOOGLE */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;1,100&family=Work+Sans:ital,wght@0,100;0,400;1,100&display=swap');
 
-  @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;1,100&family=Work+Sans:ital,wght@0,100;0,400;1,100&display=swap');
-
-*{
-	margin: 0;
-	padding: 0 auto;
-	box-sizing: 0;
-	/*propriedade para aplicar a familia de fontes do Google*/
-	font-family: 'Poppins', sans-serif;
-	font-family: 'Work Sans', sans-serif;
+* {
+    margin: 0;
+    padding: 0 auto;
+    box-sizing: border-box; /* Corrigido box-sizing */
+    /* Propriedade para aplicar a família de fontes do Google */
+    font-family: 'Poppins', sans-serif, 'Work Sans', sans-serif; /* Combinando fontes */
 }
 
-
-
-#principal{
-	width:100%;
-	height: 230vh;
-	background-image: linear-gradient( 94.3deg,  rgb(248, 246, 246) 10.9%, rgb(97, 97, 97)87.1% );
-	/*background-color: red;*/
-
-}
-#principal1{
-	width:100%;
-	height: 100vh;
-	background-image: linear-gradient( 94.3deg,  rgb(248, 246, 246) 10.9%, rgb(97, 97, 97)87.1% );
-	/*background-color: red;*/
+#principal, #principal1 {
+    width: 100%;
+    height: 230vh; /* Ajustado para 230vh */
+    background-image: linear-gradient(94.3deg, rgb(248, 246, 246) 10.9%, rgb(97, 97, 97) 87.1%);
+    /*background-color: red;*/
 }
 
-#cabecalho{
-	width:100%;
-	height: 25vh;
-	
-	/*background-color: brown;*/
+#cabecalho {
+    width: 100%;
+    height: 25vh;
+    /*background-color: brown;*/
 }
 
-#logo{
-	width:20%;
-	height: 15vh;
-	/*background-color: orange;*/
-	float: left;
-	padding-left: 20px;
-
+#logo {
+    width: 20%;
+    height: 15vh;
+    /*background-color: orange;*/
+    float: left;
+    padding-left: 20px;
 }
 
-#logo img{
-	width: 90%;	
-	height: 15vh;
-	border-top-left-radius: 10%;
-	border-bottom-right-radius: 10%;
-
+#logo img {
+    width: 90%;
+    height: 15vh;
+    border-top-left-radius: 10%;
+    border-bottom-right-radius: 10%;
 }
 
-	
-	
-	
-
-#red1{
-	float: right
+#red1, #red3 {
+    float: right; /* Agrupados os seletores com mesma propriedade */
 }
 
-#red2{
-	float: left;
-	
-	
+#red2 {
+    float: left;
 }
 
-#red3{
-float: right
+nav {
+    width: 100%;
+    height: 15vh;
+    /*background-color: olivedrab;*/
+    padding-top: 20px;
 }
 
-
-nav{
-	width: 100%;	
-	height: 15vh;
-	/*background-color: olivedrab;*/
-	padding-top: 20px;
-	
-
+.navbar {
+    width: 80%;
 }
 
-.navbar{
-	width: 80%;
+.navbar-nav li:hover {
+    background-color: rgb(221, 16, 0);
 }
 
-.navbar-nav li:hover{
-	background-color: rgb(221, 16, 0);
-
-	}
-
-
-#conteudo{
-	width:75%;
-	height: 205vh;
-	/*background-color: blueviolet;*/
+#conteudo {
+    width: 75%;
+    height: 205vh;
+    /*background-color: blueviolet;*/
 }
 
-#conteudo_esq{
-	width:70%;
-	height: 150vh;
-	/*background-color: lavender;*/
-	float: left;
-
+#conteudo_esq {
+    width: 70%;
+    height: 150vh;
+    /*background-color: lavender;*/
+    float: left;
 }
 
-#conteudo_esq img{
-	width: 100%;
-	height: 75vh;
-	margin-top: 10px;
-	
-	float: right;
-	margin-left: 30%;
-
+#conteudo_esq img {
+    width: 100%;
+    height: 75vh;
+    margin-top: 10px;
+    float: right;
+    margin-left: 30%;
 }
 
-
-
-
-#rodape{
-	width:100%;
-	height: 45vh;
-	justify-content: center;
-	/*background-color: rgb(0, 0, 0);*/
+#rodape {
+    width: 100%;
+    height: 45vh;
+    justify-content: center;
+    /*background-color: rgb(0, 0, 0);*/
 }
 
-footer{
-	width:100%;
-	height:35vh;
-	border:1px solid ;
+footer {
+    width: 100%;
+    height: 35vh;
+    border: 1px solid;
 }
 
-
-#mapa{
-	width:50%;
-	height: 35vh;
-	background-image: linear-gradient( 94.3deg,  rgb(248, 246, 246) 1.9%, rgb(97, 97, 97)80.1% );
-	border: 1px solid;
-	float: left;
-	justify-content: center;
-
+#mapa, #redesocial {
+    width: 50%;
+    height: 35vh;
+    border: 1px solid;
+    float: left;
 }
 
-#mapa iframe{
-	margin: 10px 10px;
-	border-color: yellow;
-	border-style: outset;
-	justify-content: center;
-
+#mapa {
+    background-image: linear-gradient(94.3deg, rgb(248, 246, 246) 1.9%, rgb(97, 97, 97) 80.1%);
 }
 
-
-#redesocial{
-	width:50%;
-	height: 35vh;
-	background-image: linear-gradient( 94.3deg,  rgb(97, 97, 97) 1.9%, rgb(225, 218, 218)80.1% );
-	border: 1px solid;
-	float: right;
+#mapa iframe {
+    margin: 10px 10px;
+    border-color: yellow;
+    border-style: outset;
 }
 
-#redesocial img{
-	width: 70px;
-	height: 10vh;
-	border-radius: 50%;
-	margin-left: 10%;
-	margin-top: 10%;
+#redesocial {
+    background-image: linear-gradient(94.3deg, rgb(97, 97, 97) 1.9%, rgb(225, 218, 218) 80.1%);
 }
 
-
-#redesocial  li{
-	width: 80px;
-	margin-left: 30px;
-	
+#redesocial img {
+    width: 70px;
+    height: 10vh;
+    border-radius: 50%;
+    margin-left: 10%;
+    margin-top: 10%;
 }
 
-
-
-
-label{
-	width: 280px;
-	height: 15px;
-	padding: 5px;
-	margin-left: 25px;
-	margin-bottom: 50px;
-
+#redesocial li {
+    width: 80px;
+    margin-left: 30px;
 }
-input{
-	width: 190px;
-	height: 50px;
-	padding: 10px;
-	margin-left: 45px;
-} 
+
+label {
+    width: 280px;
+    height: 15px;
+    padding: 5px;
+    margin-left: 25px;
+    margin-bottom: 50px;
+}
+
+input {
+    width: 190px;
+    height: 50px;
+    padding: 10px;
+    margin-left: 45px;
+}
 
 form {
-	
-	
-	
-	width: 50%;
-	margin: auto;
-	padding: 20px;
-	border: 1px solid #ddd;
-	border-radius: 5px;
-  }
-  
-  label {
-	display: block;
-	margin-bottom: 10px;
-  }
-  
-  input[type="text"],
-  input[type="email"],
-  select {
-	width: 100%;
-	padding: 10px;
-	margin-bottom: 20px;
-	border-radius: 5px;
-	border: 1px solid #ddd;
-  }
-  
-  input[type="submit"] {
-	width: 50%;
-	padding: 15px;
-	background-color: #333;
-	color: #fff;
-	border: none;
-	border-radius: 1000px;
-	cursor: pointer;
-  }
-
-
-
-
-/* FORMATAÇÃO RESPONSIVA */
-/*
-@media (max-width:1400px){
-	#logo{
-		background-color: red;
-	}
+    width: 50%;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
 }
 
-@media (max-width:1200px){
-	#logo{
-		background-color: cyan;
-	}
-	
+label {
+    display: block;
+    margin-bottom: 10px;
 }
 
-@media (max-width:992px){
-	#logo{
-		background-color: pink;
-	}
+input[type="text"],
+input[type="email"],
+select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
 }
 
-@media (max-width:768px){
-	#logo{
-		background-color: brown;
-	}
+input[type="submit"] {
+    width: 50%;
+    padding: 15px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 1000px;
+    cursor: pointer;
 }
-
-@media (max-width:576px){
-	
-}
-*/
